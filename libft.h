@@ -6,7 +6,7 @@
 /*   By: alehamad <alehamad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 16:19:10 by alehamad          #+#    #+#             */
-/*   Updated: 2025/11/10 17:11:57 by alehamad         ###   ########.fr       */
+/*   Updated: 2025/11/20 09:28:28 by alehamad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,17 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	**ft_split(char const *s, char c);
+
+// PRINTF
+int		ft_printf(const char *str, ...);
+int		ft_putnbr_unsigned(unsigned int n);
+int		ft_putpointer(void *ptr);
+int		ptf_putchar_fd(char c, int fd);
+int		ptf_putstr_fd(char *s, int fd);
+int		ptf_putnbr(long n);
+int		ft_puthex(unsigned long n);
+int		ft_putbighex(unsigned long n);
+size_t	ft_strlen_printf(const char *s);
 
 // BONUS PART
 typedef struct s_list
