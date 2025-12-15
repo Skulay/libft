@@ -8,7 +8,7 @@ Objectif: fournir une base stable, facile à intégrer, et organisée par module
 Les dossiers sont à la racine (pas de `src/`).
 Le header principal est à la racine.
 
-.
+	.
 ├── libft.h
 
 	├── Makefile
