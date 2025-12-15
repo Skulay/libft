@@ -3,25 +3,21 @@
 Libft est une bibliothèque C qui regroupe des utilitaires réutilisables pour les projets 42 et hors 42.
 Objectif: fournir une base stable, facile à intégrer, et organisée par modules.
 
-## Structure
+## Arborescence
 
-Les dossiers sont à la racine (pas de `src/`).
-Le header principal est à la racine.
+Les sources sont rangées dans `src/` par modules.
+`libft.h` est à la racine et sert de point d’entrée unique.
 
-	. ├── libft.h
 
-			├── Makefile
-
+	.
+		├── Makefile
+		├── libft.h
+		└── src/
 			├── ctype/
-
 			├── string/
-
 			├── memory/
-
 			├── convert/
-
 			├── print/
-
 			└── list/
 
 ## Dossiers
