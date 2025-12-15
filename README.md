@@ -9,16 +9,15 @@ Les sources sont rangées dans `src/` par modules.
 `libft.h` est à la racine et sert de point d’entrée unique.
 
 
-	.
-		├── Makefile
-		├── libft.h
-		└── src/
-			├── ctype/
-			├── string/
-			├── memory/
-			├── convert/
-			├── print/
-			└── list/
+	├── Makefile
+	├── libft.h
+	└── src/
+		├── ctype/
+		├── string/
+		├── memory/
+		├── convert/
+		├── print/
+		└── list/
 
 ## Dossiers
 
