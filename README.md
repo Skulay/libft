@@ -52,24 +52,24 @@ But: créer, parcourir, ajouter, supprimer, et transformer des listes de façon 
 ## Compilation
 
 Construire la bibliothèque:
-make
+	make
 
 Nettoyer les objets:
-make clean
+	make clean
 
 Nettoyer objets + bibliothèque:
-make fclean
+	make fclean
 
 Rebuild complet:
-make re
+	make re
 
 ## Utilisation dans un projet
 
 Exemple simple si libft.a et libft.h sont au même niveau que ton main.c:
-cc -Wall -Wextra -Werror main.c -L. -lft
+	cc -Wall -Wextra -Werror main.c -L. -lft
 
 Si libft est dans un dossier libft/:
-cc -Wall -Wextra -Werror main.c -Llibft -lft -Ilibft
+	cc -Wall -Wextra -Werror main.c -Llibft -lft -Ilibft
 
 ## Notes
 
