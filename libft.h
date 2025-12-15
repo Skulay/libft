@@ -6,17 +6,26 @@
 /*   By: alehamad <alehamad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 16:19:10 by alehamad          #+#    #+#             */
-/*   Updated: 2025/11/20 09:28:28 by alehamad         ###   ########.fr       */
+/*   Updated: 2025/12/15 18:40:19 by alehamad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
+
+# define MAX_FD 1024
+
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdio.h>
 # include <stdint.h>
+# include <stdarg.h>
+# include <fcntl.h>
+# include <limits.h>
 
 // MANDA PART 1
 int		ft_isdigit(int c);
@@ -66,6 +75,14 @@ int		ptf_putnbr(long n);
 int		ft_puthex(unsigned long n);
 int		ft_putbighex(unsigned long n);
 size_t	ft_strlen_printf(const char *s);
+
+// GET_NEXT_LINE
+char	*gnl_strdup(const char *s);
+char	*gnl_strjoin_free(char *s1, char *s2);
+char	*gnl_strchr(const char *s, int c);
+char	*extract_line(char *buf);
+char	*get_next_line(int fd);
+size_t	gnl_strlen(char *s);
 
 // BONUS PART
 typedef struct s_list

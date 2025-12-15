@@ -40,9 +40,10 @@ SRC = ft_isalpha.c \
 	ft_putnbr_fd.c \
 	ft_printf_utils_two.c \
 	ft_printf_utils.c \
-	ft_printf.c
-
-BONUS = ft_lstnew_bonus.c \
+	ft_printf.c \
+	get_next_line_bonus.c \
+	get_next_line_utils_bonus.c \
+	ft_lstnew_bonus.c \
 	ft_lstadd_front_bonus.c \
 	ft_lstsize_bonus.c \
 	ft_lstlast_bonus.c \
@@ -53,7 +54,6 @@ BONUS = ft_lstnew_bonus.c \
 	ft_lstmap_bonus.c
 
 OBJ = $(SRC:.c=.o)
-OBJBONUS = $(BONUS:.c=.o)
 
 all: $(NAME)
 
@@ -64,14 +64,11 @@ $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) $(OBJ) $(OBJBONUS)
+	$(RM) $(OBJ)
 
 fclean: clean
 	$(RM) $(NAME)
 
-bonus: $(OBJ) $(OBJBONUS)
-	$(AR) $(NAME) $(OBJ) $(OBJBONUS)
-
 re: fclean all
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re
