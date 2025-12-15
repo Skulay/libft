@@ -6,7 +6,7 @@
 /*   By: alehamad <alehamad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 16:19:10 by alehamad          #+#    #+#             */
-/*   Updated: 2025/12/15 18:40:19 by alehamad         ###   ########.fr       */
+/*   Updated: 2025/12/15 20:19:29 by alehamad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,10 @@ char	*gnl_strchr(const char *s, int c);
 char	*extract_line(char *buf);
 char	*get_next_line(int fd);
 size_t	gnl_strlen(char *s);
+
+// ADD FUNCTION
+double	ft_atod(const char *s);
+long	ft_atol(char *nptr);
 
 // BONUS PART
 typedef struct s_list
