@@ -11,19 +11,19 @@ Le header principal est à la racine.
 .
 ├── libft.h
 
-├── Makefile
+  ├── Makefile
 
-├── ctype/
+  ├── ctype/
 
-├── string/
+  ├── string/
 
-├── memory/
+  ├── memory/
 
-├── convert/
+  ├── convert/
 
-├── print/
+  ├── print/
 
-└── list/
+  └── list/
 
 ## Dossiers
 
