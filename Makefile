@@ -3,6 +3,8 @@ CC      = cc
 CFLAGS  = -Wall -Wextra -Werror
 AR      = ar rcs
 RM      = rm -f
+SRCDIRS = src/ctype src/string src/memory src/convert src/print src/list
+VPATH   = src/ctype:src/string:src/memory:src/convert:src/print:src/list
 
 SRC = ft_isalpha.c \
 	ft_isdigit.c \
@@ -62,8 +64,8 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(AR) $(NAME) $(OBJ)
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+%.o: %.c libft.h
+	$(CC) $(CFLAGS) -I. -c $< -o $@
 
 clean:
 	$(RM) $(OBJ)
