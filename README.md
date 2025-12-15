@@ -51,17 +51,17 @@ But: créer, parcourir, ajouter, supprimer, et transformer des listes de façon 
 
 ## Compilation
 
-Construire la bibliothèque:
-	make
+	Construire la bibliothèque:
+		make
 
-Nettoyer les objets:
-	make clean
+	Nettoyer les objets:
+		make clean
 
-Nettoyer objets + bibliothèque:
-	make fclean
+	Nettoyer objets + bibliothèque:
+		make fclean
 
-Rebuild complet:
-	make re
+	Rebuild complet:
+		make re
 
 ## Utilisation dans un projet
 
