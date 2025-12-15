@@ -69,7 +69,7 @@ Exemple simple si libft.a et libft.h sont au même niveau que ton main.c:
 	cc -Wall -Wextra -Werror main.c -L. -lft
 
 Si libft est dans un dossier libft/:
-	cc -Wall -Wextra -Werror main.c -Llibft -lft -Ilibft
+		cc -Wall -Wextra -Werror main.c -Llibft -lft -Ilibft
 
 ## Notes
 
