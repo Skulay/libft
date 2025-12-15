@@ -9,7 +9,7 @@ Les dossiers sont à la racine (pas de `src/`).
 Le header principal est à la racine.
 
 	.
-├── libft.h
+	├── libft.h
 
 	├── Makefile
 
